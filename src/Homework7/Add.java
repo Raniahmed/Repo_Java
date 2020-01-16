@@ -1,0 +1,22 @@
+package Homework7;
+
+public class Add {
+
+   /* 3. Add all numbers in a given array (fyi: length of input array can vary)
+                Eg: Input to method : [20, 10, 40, 44]
+                      Output/Return from method : 114*/
+
+
+        public static int sum(int numOne,int numTwo,int numThree,int numfour){
+            int Total;
+            Total = numOne+numTwo+numThree+numfour;
+            return Total;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(sum(20,10,40,44));
+
+        }
+    }
+
+
