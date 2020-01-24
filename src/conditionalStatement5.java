@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-public class Menu_Homework {
+public class conditionalStatement5 {
 
     public static void main(String[] args) {
 

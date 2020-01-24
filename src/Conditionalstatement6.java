@@ -14,53 +14,54 @@
 
 import java.util.Scanner;
 
-public class SuperMarketItemFinder_Homework {
+public class Conditionalstatement6 {
 
 
         public static void main(String[] args) {
 
 
-            Scanner in = new Scanner(System.in);
-            System.out.println("Welcome to this supermarket");
-            String item = in.nextLine();
-            in.close();
+            Scanner input = new Scanner(System.in);
+            String item =null;
+
+            System.out.println("Enter item name");
+            item = input.nextLine();
+
+
             switch (item) {
 
-                case "Milk":
-                case "Eggs":
+                case "Milk ":
+                case "Eggs ":
                 case "Donuts":
 
-                    System.out.println("Aisle Eight");
+                    System.out.println(item+"Is on Aisle Eight");
                     break;
 
                 case "French fries":
                 case "Frozen Pizza":
 
-                    System.out.println("Aisle Seven");
+                    System.out.println(item + "Is on Aisle Seven");
                     break;
 
                 case "Candy":
-
-                    System.out.println("Aisle Three");
+                    System.out.println(item + "Is on Aisle Three");
                     break;
 
                 case "Diapers":
-
-                    System.out.println("Aisle One");
+                    System.out.println(item + " is on Aisle One");
                     break;
 
                 case "Apple":
                 case "Orange":
 
-                    System.out.println("Aisle Two");
+                    System.out.println(item + "Is on Aisle Two");
                     break;
                 default:
-                    System.out.println("Out of Stock");
-                    break;
+                    System.out.println(item + "Out of Stock");
+
 
 
             }
-            System.out.println(item + "is located");
+
         }
     }
 

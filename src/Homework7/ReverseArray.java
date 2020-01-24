@@ -7,27 +7,27 @@ public class ReverseArray {
 
 
 
-        public static void main(String[] args) {
-            //    System.out.println(reverseArray());// im gettig stuck here
+
+    public int[] reverseArray(int[] myArray){
+
+        //get the array length
+        int arrayLength = myArray.length;
+
+        //index of the last array element
+        int lastIndex = arrayLength - 1;
+
+        //create a new array
+        int[] reversedArray = new int[arrayLength];
+
+        //iterate over myArray[0...n-1], n is number of elements, in reverse direction,[n-1...0] and
+        //put all the elements into reversedArray[0..n-1]
+        for (int i = 0; i < arrayLength; i++){
+
+            reversedArray[i] = myArray[lastIndex - i];
         }
 
-        public static int[] reverseArray (int[] myArray){
-
-            int[] array = {25, 15, 3, 2, 40};
-
-            int arrayLength = myArray.length;
-
-            int lastIndex = arrayLength - 1;
-
-            int[] reversedArray = new int[arrayLength];
-
-            for (int i = 0; i < arrayLength; i++) {
-
-                reversedArray[i] = myArray[lastIndex - i];
-            }
-
-            return reversedArray;
-        }
+        return reversedArray;
+    }
     }
 
 

@@ -7,18 +7,14 @@ public class StringRev {
           Output/Return from method : elpmaS*/
 
 
-
-
-        public static void main(String[] args) {
-            System.out.println(method("Sample"));
-
-        }
-        public static String method(String name){
+        public String getreverse(String Word){
+            String word= "Sample";
+            int len = word.length();
             String reversed = "";
-            int stringLength = name.length();
 
-            for (int i = name.length()-1; i >=0; i--) {
-                reversed = reversed + name.charAt(i);
+
+            for (int i = 1;i<=len; i++) {
+                reversed = reversed + word.charAt(len-i);
 
             }
             return reversed;

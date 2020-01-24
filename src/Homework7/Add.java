@@ -8,15 +8,14 @@ public class Add {
 
 
         public static int sum(int numOne,int numTwo,int numThree,int numfour){
+
             int Total;
             Total = numOne+numTwo+numThree+numfour;
             return Total;
-        }
-
-        public static void main(String[] args) {
-            System.out.println(sum(20,10,40,44));
+          }
 
         }
-    }
 
 
+        // For an array of smaller size it's kind of okay but
+        // if the array size is large enough than we should use loops.
